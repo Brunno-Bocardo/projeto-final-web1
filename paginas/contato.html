@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contato</title>
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/reset.css">
+      <link rel="stylesheet" href="../css/contato.css">
+      <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Nunito+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="contatos">
+    <header>
+      <a href="../index.html"><img src="../img/logo.png" alt="Logo" /></a>
+      <nav>
+
+        <input type="checkbox" id="menu-hamburguer" />
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="hamburguer"></span>
+          </div>
+        </label>
+
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="faq.html">Perguntas Frequentes</a></li>
+          <li><a href="contato.html">Nos contate!</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="contato-titulo">Venha conhecer a beleza do cosmos!</h1>
+      <form>
+        <p class="input">
+          <input type="text" name="nome" id="nome" required>
+          <span>Nome:</span>
+        </p>
+        <p class="input">
+          <input type="number" name="telefone" id="telefone" required>
+          <span>Telefone:</span>
+        </p>
+        <p class="input">
+          <input type="email" name="email" id="email" required>
+          <span>Email:</span>
+        </p>
+        <p class="input">
+          <input type="password" name="senha" id="senha" required>
+          <span>Código de Abdução:</span>
+        </p>
+        <p class="input">
+          <select name="escolha" id="escolha">
+            <option value="#">DESTINOS:</option>
+            <option value="1">Coruscant</option>
+            <option value="2">Cromopolis</option>
+            <option value="3">A Lua Rústica de Plumavera</option>
+            <option value="4">Incendia</option>
+          </select>
+        </p>
+        <p class="botoes">
+          <button type="submit" id="btn-enviar">Enviar</button>
+          <button type="reset">Limpar</button>
+        </p>
+      </form>
+    </main>
+
+    <dialog id="popup">
+      <p>Muito obrigado, <span id="pop-nome"></span>! Tenho certeza que você irá adorar <span id="pop-planeta"></span>.</p>
+      <button type="button" id="btn-close">Ok</button>
+    </dialog>
+    
+    <footer>
+      <p>Todos os direitos reservados ©</p>
+      <img src="../img/logo.png" alt="Logo" />
+      <address>Em uma galáxia muito, muito distante</address>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

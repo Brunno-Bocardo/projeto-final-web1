@@ -1,0 +1,122 @@
+/* CONTATOS */
+.contatos {
+  background-image: url(../img/background.jpg); 
+  background-repeat: repeat-y;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.contatos main {
+  padding: 140px 30px 30px 30px;
+}
+
+.contatos footer {
+  width: 100%;
+}
+
+.input, select {
+  position: relative;
+  width: 400px;
+}
+
+.input input, select {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  font-size: 1em;
+  
+}
+
+.input span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.input input:valid ~ span,
+.input input:focus ~ span {
+  color: aliceblue;
+  transform:  translateX(10px) translateY(-9px);
+  font-size: 0.9em;
+  padding:  0 10px;
+  background-color: #15AA6D;
+  letter-spacing: 0.2em;
+}
+
+.input input:valid,
+.input input:focus {
+  border: 2px solid #15AA6D;
+}
+
+form {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+option {
+  color: black;
+}
+
+button {
+  font-size: 16px;
+  color: black;
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.botoes {
+  display: flex;
+  gap: 10px;
+}
+button:hover {
+  background-color: #15AA6D;
+  color: aliceblue;
+}
+
+.contato-titulo {
+  backdrop-filter: blur(1px);
+}
+
+#popup {
+  z-index: 10;
+  padding: 60px 30px;
+  width: 50%;
+  margin: auto;
+  margin-top: 15%;
+  border-radius: 5px;
+}
+
+#popup::backdrop {
+  background-color: rgba(0, 0, 0, .7);
+}
+
+dialog p {
+  color: black;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+#pop-nome, #pop-planeta {
+  color: #15AA6D;
+}
+
+@media (max-width: 768px) {
+  .input, select {
+    width: 320px;
+  }
+}

@@ -1,0 +1,103 @@
+main {
+    padding-top: 140px;
+}
+
+aside {
+    background-color: rgba(0, 0, 0, .6);
+    width: 35%;
+    padding: 35px;
+}
+
+.titulo-aside {
+    margin-bottom: 30px;
+}
+
+.opiniao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.acordeon {
+    display: flex;
+    gap: 60px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    backdrop-filter: blur(1px);
+    width: 50%;
+}
+
+.acordeon .conteudo h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.acordeon .itens {
+    list-style-type: none;
+}
+
+.acordeon .conteudo .itens .item .pergunta {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.acordeon .conteudo .itens .item .pergunta:hover {
+    background-color: #15AA6D;
+    color: aliceblue;
+}
+
+.acordeon .itens .item {
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.acordeon .itens .item:last-child {
+    border-bottom: none;
+}
+
+.resposta {
+    padding-bottom: 15px;
+    font-weight: 300;
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+
+
+figure {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 100px auto;
+}
+
+figure a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    backdrop-filter: blur(1px);
+    text-decoration: none;
+    letter-spacing: .2em;
+}
+
+figure a img {
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+    figure a img {
+        height: 100px;
+    }
+}
