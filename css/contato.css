@@ -97,7 +97,7 @@ button:hover {
   padding: 60px 30px;
   width: 50%;
   margin: auto;
-  margin-top: 15%;
+  margin-top: 9%;
   border-radius: 5px;
 }
 
@@ -105,18 +105,36 @@ button:hover {
   background-color: rgba(0, 0, 0, .7);
 }
 
-dialog p {
+dialog p, dialog h2, dialog h4 {
   color: black;
   font-size: 17px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-#pop-nome, #pop-planeta {
+dialog button {
+  background-color: rgb(190, 195, 199);
+}
+
+dialog section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#pop-nome, #pop-planeta, #pop-senha, #pop-email, #pop-telefone {
   color: #15AA6D;
 }
+
+
 
 @media (max-width: 768px) {
   .input, select {
     width: 320px;
+  }
+  dialog section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 15px;
   }
 }
